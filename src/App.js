@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('landing'); // Manage current page
+  const [currentPage, setCurrentPage] = useState('landing');
 
   const handleNavigate = (page) => {
     setCurrentPage(page);
@@ -75,7 +75,7 @@ function TimerPage({ onNavigate }) {
   const handleClose = () => {
     console.log('Timer stopped');
     setIsRunning(false);
-    onNavigate('landing'); // Navigate back to LandingPage
+    onNavigate('landing');
   };
 
   return (
